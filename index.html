@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/mobile.css" />
+    <link rel="stylesheet" href="/src/css/domi.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+    <script src="/src/javascript/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/9ab8c5e9dd.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>File Hunter</title>
+  </head>
+  <body>
+    <div class="menuMobile">
+      <a href="#home"><h5>File Hunter</h5></a>
+
+      <i class="fa-solid fa-bars" id="showMenu"></i>
+    </div>
+
+    <header>
+      <nav class="menu">
+        <a href="#home"><h5>File Hunter</h5></a>
+        <div class="links">
+          <a href="#" class="menu-item" data-url="home"></a>
+          <a href="#howtouse" class="menu-item" data-url="howtouse"
+            >How to use</a
+          >
+          <a href="#download" class="menu-item" data-url="download">Download</a>
+          <a href="https://github.com/reznov01" target="_blank" class=""
+            >Github</a
+          >
+        </div>
+      </nav>
+      <!-- nav Mobile  -->
+      <div class="mobilToggle" id="boxMenuMobile">
+        <div class="content-menu" id="mobilToggle">
+          <i class="fa-regular fa-circle-xmark exit-mobile" id="exitMenu"></i>
+          <nav>
+            <div class="box-menu--mobile" id="linkMenu1">
+              <i class="fa-solid fa-folder-tree"></i>
+              <a href="#howtouse" class="menu-item" data-url="howtouse"
+                >How to use</a
+              >
+            </div>
+            <div class="box-menu--mobile" id="linkMenu2">
+              <i class="fa-regular fa-circle-down"></i>
+              <a href="#download" class="menu-item" data-url="download"
+                >Download</a
+              >
+            </div>
+            <div class="box-menu--mobile">
+              <i class="fa-brands fa-github-alt"></i>
+              <a href="https://github.com/reznov01" target="_blank" class=""
+                >Github</a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="content section" id="home">
+        <div class="background-home"></div>
+        <div class="titleText">
+          <div class="box-header-title">
+            <div class="boxTitle">
+              <h1 class="fileT titleT">
+                begins
+                <span class="theT titleT"> the </span>
+                <span class="searchT titleT"> adventure</span>
+              </h1>
+            </div>
+            <h3 class="descriptionT">
+              Tool to search your files easily and fast
+            </h3>
+          </div>
+        </div>
+
+        <div class="appDomi">
+          <div class="container card__app">
+            <div class="inputs">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <form action="" class="data" onsubmit="return false" id="formAction"> -->
+                  <div class="headCard">
+                    <h4 for="NameTarget" class="titleCard">Address to Copy</h4>
+                  </div>
+                  <div class="fileCopy">
+                    <input
+                      type="text"
+                      class="form-control inputText"
+                      id="addressCopy"
+                      placeholder="Ej.  C:\users\%USERNAME%\myFolder\"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="divOptions">
+                    <div class="options">
+                      <div class="form-check form-switch checks">
+                        <input
+                          class="form-check-input fileSearch"
+                          type="checkbox"
+                          role="switch"
+                          value="img"
+                          id="img"
+                        />
+                        <label class="form-check-label" for="img">
+                          Search Img
+                        </label>
+                        <span class="infoZise0 tooltipC">
+                          Zise
+                          <span class="badge bg-primary"
+                            ><span class="numZise" id="imgZise">0 GB</span>
+                            <span class="tooltipBox" id="tooltipI"
+                              >0 Archivos</span
+                            >
+                          </span>
+                        </span>
+                      </div>
+
+                      <div class="form-check form-switch checks">
+                        <input
+                          class="form-check-input fileSearch"
+                          type="checkbox"
+                          role="switch"
+                          value="pdf"
+                          id="pdf"
+                        />
+                        <label class="form-check-label" for="pdf">
+                          Search Pdf
+                        </label>
+                        <span class="infoZise tooltipC"
+                          >Zise
+                          <span class="badge bg-primary"
+                            ><span class="numZise" id="pdfZise">0 GB</span>
+                            <span class="tooltipBox" id="tooltipP"
+                              >0 Archivos</span
+                            >
+                          </span>
+                        </span>
+                      </div>
+                      <div class="form-check form-switch checks">
+                        <input
+                          class="form-check-input fileSearch"
+                          type="checkbox"
+                          value="word"
+                          role="switch"
+                          id="word"
+                        />
+                        <label class="form-check-label" for="word">
+                          Search Word
+                        </label>
+                        <span class="infoZiseLast tooltipC"
+                          >Zise
+                          <span class="badge bg-primary"
+                            ><span class="numZise" id="wordZise">0 GB</span>
+                            <span class="tooltipBox" id="tooltipW"
+                              >0 Archivos</span
+                            >
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="buttonsApp">
+                      <div class="scan_btn">
+                        <button
+                          class="btn btn-success"
+                          id="scanning"
+                          ;
+                          type="button"
+                        >
+                          <span
+                            class="icon-carga loadAnimation"
+                            id="iconC"
+                          ></span>
+                          Scanning
+                        </button>
+                      </div>
+
+                      <div class="copy_btn">
+                        <button
+                          class="btn btn-danger"
+                          id="btnCopy"
+                          type="button"
+                        >
+                          Copy
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- </form> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Antes del grid div-------- ----------------->
+      <section class="howtouse section" id="howtouse">
+        <div class="infoCol">
+          <div class="info">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="card-title text-center">How to use app</h2>
+              </div>
+              <div class="card-body">
+                <div class="info1">
+                  <h4 class="infoTextColor">1</h4>
+                  <p>
+                    add the address where the copied files folder will be
+                    created
+                  </p>
+                  <p class="muted">
+                    If you do not enter an address when starting the file
+                    search, a default folder will be created on your computer's
+                    desktop with the name of Data Dump
+                  </p>
+                </div>
+                <div class="info2">
+                  <h4 class="infoTextColor">2</h4>
+                  <p>select the files to search on the computer</p>
+                  <p class="muted">
+                    the file search is at the user level it does not search the
+                    local files of the system or applications
+                  </p>
+                </div>
+                <div class="info3">
+                  <h4 class="infoTextColor">3</h4>
+                  <p>
+                    press Scanning wait and then press copy if the result is
+                    what you expected
+                  </p>
+                  <p class="muted">
+                    hover over the size attribute to get the total weight of
+                    files to copy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="houto__img">
+          <div class="divInfoImg">
+            <div class="imgInfo">
+              <img class="cover narrow" src="/src/img/tutorial.png" alt="" />
+              <span class="badge rounded-pill bg-dark text-dark iconInfo1"
+                >1</span
+              >
+              <span class="badge rounded-pill bg-info text-dark iconInfo2"
+                >2</span
+              >
+              <span class="badge rounded-pill bg-info text-dark iconInfo3"
+                >3</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download section" id="download">
+        <div class="grid-container">
+          <div class="myCard">
+            <div class="imgChanged">
+              <img
+                src="/src/img/svg6.svg"
+                alt="imagen decorativa"
+                id="img__download"
+              />
+            </div>
+
+            <div class="infoD">
+              <h2>Download Version Portable</h2>
+              <div class="textDownload">
+                <p>
+                  this portable version is able to run from a pen drive,
+                  <span class="warning">
+                    remember to use this tool on computers that you are
+                    authorized and/or manage
+                  </span>
+                </p>
+              </div>
+              <div class="buttonsDownload">
+                <a
+                  href="https://www.mediafire.com/file/6xyxkblstif4vii/app32.zip/file"
+                  download="App.zip"
+                  ><button class="btn btn-success">winx86 32 bits</button>
+                </a>
+                <button class="btn btn-success">winx64 64 bits</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container text-center py-3">
+          <span class="text-light">
+            All rights reserved. Made with
+            <span class="text-danger"> ❤ </span> and ☕ by
+            <a href="https://github.com/Reznov01" target="_blank"
+              >Rafael R "Conse Lab"
+            </a>
+          </span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+.headCard {
+  text-align: center;
+  color: rgb(0, 238, 255);
+  margin-bottom: 15px;
+}
+
+.inputs {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.inputs .card {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  box-shadow: 3px 3px 15px 3px rgb(0, 183, 255);
+  overflow: hidden;
+}
+
+.checks {
+  margin-top: 10px;
+  color: rgb(0, 238, 255);
+}
+.inputText {
+  background: rgba(27, 27, 27, 0.945);
+  /* border: 1px solid rgb(0, 183, 255); */
+  border: none;
+  color: rgb(0, 255, 42);
+}
+
+.inputText:focus {
+  background-color: rgba(2, 2, 2, 0.945);
+  color: red;
+}
+.checks input:checked {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.checks input {
+  background-color: rgb(255, 255, 255);
+}
+form .btn {
+  margin-left: 35%;
+  margin-top: 10px;
+}
+
+/* Data base  */
+.databaseShow {
+  text-align: center;
+  position: relative;
+  /* background: black; */
+}
+.infoZise0 {
+  margin-left: 26px;
+  color: rgb(255, 72, 0);
+}
+
+.infoZise {
+  margin-left: 30px;
+  color: rgb(255, 72, 0);
+}
+
+.infoZiseLast {
+  margin-left: 15px;
+  color: rgb(255, 72, 0);
+}
+
+.divOptions {
+  position: relative;
+  width: 100%;
+  /* background: rebeccapurple; */
+}
+
+.options {
+  margin-left: 25%;
+}
+
+.buttonsApp {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 20px 0;
+}
+
+.scan_btn {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.scan_btn button {
+  width: 90%;
+}
+
+.copy_btn {
+  grid-column: 4/6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.copy_btn button {
+  width: 90%;
+}
+
+.tooltipC {
+  position: relative;
+}
+
+.tooltipC:hover .tooltipBox {
+  display: inline-block;
+}
+
+.tooltipBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -38px;
+  background: rgb(10, 156, 41);
+  line-height: 20px;
+  z-index: 30;
+  text-align: center;
+  color: aliceblue;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+.tooltipBox::after {
+  content: "";
+  display: block;
+  border-top: 8.5px solid rgb(10, 156, 41);
+  border-left: 8.5px solid transparent;
+  border-right: 8.5px solid transparent;
+  position: absolute;
+  bottom: -7px;
+  left: calc(50% - 7px);
+}
