@@ -67,7 +67,6 @@ var img = 1;
 const changeImg = () => {
   imgElemetn.src = `/src/img/svg${img}.svg`;
   img++;
-  console.log(img);
   if (img >= 6) {
     img = 1;
   }

@@ -216,8 +216,11 @@ nav .links a:hover {
 }
 .imgInfo {
   position: relative;
+  display: flex;
+  margin-top: 30vh;
+  justify-content: center;
   /* background-color: red; */
-  margin-top: 25%;
+  /* margin-top: 25%; */
 }
 
 .infoTextColor {
